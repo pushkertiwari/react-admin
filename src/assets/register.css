@@ -1,0 +1,251 @@
+.header{
+			background-color: #171718;
+			padding: 20px;
+		}
+		.header .navbar{
+			background-color: transparent;
+			margin-bottom: 0;
+			min-height: unset;
+		}
+		.header .navbar-brand{
+			padding: 0;
+			height: auto;
+		}
+		.header .navbar-nav{
+			float: right;
+			list-style: none;
+			padding: 0;
+			margin-top: 8px;
+		}
+		.header .navbar-nav li a{
+			color: #8D8D8C;
+			font-size: 16px;
+			padding: 8px;
+		}
+		.header .navbar-nav li.active a,
+		.header .navbar-nav li a:hover,
+		.header .navbar-nav li a:focus{
+			color: #ffffff;
+		}
+		@media (max-width: 767px){
+			.header .navbar-nav li{
+				display: inline-block;
+			}
+		}
+		@media (max-width: 480px){
+			.header .navbar-nav{
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+			.header .navbar-nav li a{
+				font-size: 15px;
+				padding: 8px 4px;
+			}
+		}
+		.form_wrapper{
+			background-image: url(/../../images/dark_bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			color: #ffffff;
+			padding: 0 20px;
+		}
+		.form_wrapper h3{
+			color: #ffffff;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.form_tabs{
+			background-color: #232424;
+			margin: 2% auto;
+			max-width: 100%;
+			width: 750px;
+		}
+		.form_tabs .nav-tabs{
+			border-bottom: 0;
+			background-color: #EFEFF2;
+		}
+		.form_tabs .nav-tabs li{
+			width: 50%;
+			float: left;
+			text-align: center;
+			margin: 0;
+		}
+		.form_tabs .nav-tabs li a{
+			background-color: #EFEFF2;
+			border: 0 none;
+			border-radius: 0;
+			color: #060607;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0;
+		}
+		.form_tabs .nav-tabs li.active a,
+		.form_tabs .nav-tabs li a:hover,
+		.form_tabs .nav-tabs li a:focus{
+			background-color: #FFAE00;
+			border: 0 none;
+			color: #060607;
+		}
+		.form_tabs .tab-content{
+			padding: 25px;
+		}
+		form.form_fields .input-group,
+		form.form_fields .form-group{
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		form.form_fields .input-group .input-group-addon{
+			background-color: #FFB300;
+			border-color: #FFB300;
+			color: #000;
+			height: 40px;
+			padding: 6px 10px;
+			width: 40px;
+		}
+		form.form_fields .input-group-addon .fa{
+			font-size: 17px;
+		}
+		form.form_fields .form-control{
+			height: 40px;
+		}
+		.form_fields .form-group .continue{
+			display: block;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		.form_fields .form-group p{
+			font-size: 16px;
+			text-align: left;
+		}
+		.form_fields .form-group p a{
+			color: #FFAE00;
+		}
+		.form_fields .form-group .input-group{
+			float: left;
+			padding-left: 0;
+			padding-right: 10px;
+			width: 50%;
+		}
+		.form_fields .form-group .input-group + .input-group{
+			padding-left: 10px;
+			padding-right: 0;
+		}
+		.form_tabs .tab-pane h4{
+			margin-bottom: 25px;
+			text-align: center;
+		}
+		.form_fields .content{
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			border-radius: 0;
+			height: 140px;
+			width: 100%;
+			padding: 10px 5px;
+		}
+		.form_fields .content p{
+			color: #000;
+			font-size: 16px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.form_fields p span{
+			color: #FFAE00;
+		}
+		.form_fields .form-group .btn + .btn{
+			float: right;
+		}
+
+		.hideme {
+    		display: none;
+		}
+		label.checkbox {
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: normal;
+			line-height: 30px;
+			margin-bottom: 0;
+			margin-top: 0;
+			padding-right: 35px;
+			position: relative;
+		}
+		label.checkbox::before {
+			background-color: transparent;
+			border: 1px solid #dfdfdf;
+			border-radius: 0;
+			content: "";
+			display: inline-block;
+			height: 20px;
+			position: absolute;
+			vertical-align: middle;
+			width: 20px;
+			top: 6px;
+			left: auto;
+			right: 0;
+		}
+		label.checkbox::after {
+			position: absolute;
+			content: "\f00c";
+			font-family: 'FontAwesome';
+			color: #ffffff;
+			opacity: 0;
+			font-size: 20px;
+			left: auto;
+			right: -5px;
+		}
+		.hideme:checked + label.checkbox::after {
+    		opacity: 1;
+		}
+
+		.form_fields.verify .form-group .input-group{
+			float: unset;
+			width: 100%;
+			padding: 0;
+		}
+		.form_fields.verify .form-group > .form-control{
+			background-color: transparent;
+			border-radius: 0;
+			box-shadow: none;
+			border: 2px solid #ffffff;
+			color: #ffffff;
+		}
+		.form_fields.verify .form-group p{
+			text-align: center;
+		}
+		@media (max-width: 767px){
+			.form_fields .form-group .btn{
+				margin: 5px auto;
+				display: block;
+			}
+			.form_fields .form-group .btn + .btn{
+				float: unset;
+			}
+			.form_wrapper h3{
+				font-size: 20px;
+				margin-top: 25px;
+				margin-bottom: 20px;
+			}
+			.form_tabs .nav-tabs li a{
+				font-size: 16px;
+			}
+			.form_tabs .tab-pane h4{
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+			.form_fields .form-group p{
+				font-size: 14px;
+				margin-bottom: 7px;
+			}
+			.form_fields .form-group .input-group{
+				float: unset;
+				width: 100%;
+				padding: 0;
+			}
+			.form_fields .form-group .input-group + .input-group{
+				padding: 0;
+			}
+			.form_tabs .tab-content {
+    			padding: 15px;
+			}
+		}
